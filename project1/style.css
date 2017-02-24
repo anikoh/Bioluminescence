@@ -1,12 +1,6 @@
 
 body{
 
-  /*background: #98f9e8;
-  background: -moz-linear-gradient(top,  #98f9e8 0%, #207cca 23%, #1f2256 51%, #000000 88%, #000000 100%);
-  background: -webkit-linear-gradient(top,  #98f9e8 0%,#207cca 23%,#1f2256 51%,#000000 88%,#000000 100%);
-  background: linear-gradient(to bottom,  #98f9e8 0%,#207cca 23%,#1f2256 51%,#000000 88%,#000000 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98f9e8', endColorstr='#000000',GradientType=0 ); */
-
 
   background: rgb(123,229,225);
   background: -moz-linear-gradient(top,  rgba(123,229,225,1) 0%, rgba(30,134,153,1) 13%, rgba(27,90,109,1) 23%, rgba(19,41,79,1) 50%, rgba(0,0,0,1) 87%);
@@ -15,9 +9,17 @@ body{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7be5e1', endColorstr='#000000',GradientType=0 );
 
 
+  /*background: rgb(35,175,171);
+  background: -moz-linear-gradient(top,  rgba(35,175,171,1) 0%, rgba(26,88,130,1) 17%, rgba(13,17,68,1) 46%, rgba(0,0,0,1) 72%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(35,175,171,1) 0%,rgba(26,88,130,1) 17%,rgba(13,17,68,1) 46%,rgba(0,0,0,1) 72%,rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom,  rgba(35,175,171,1) 0%,rgba(26,88,130,1) 17%,rgba(13,17,68,1) 46%,rgba(0,0,0,1) 72%,rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23afab', endColorstr='#000000',GradientType=0 ); */
+
+
   font-family: 'Julius Sans One', sans-serif;
   color: white;
 
+  /*background-image: url("img/background3.jpg");*/
 }
 
 .wrapper{
@@ -30,55 +32,106 @@ body{
 }
 
 .board {
-  /* margin: 10% auto;*/
-  height: 500px;
-  width: 645px;
-  display: inline-block;
+  margin: 0 auto 17% auto;
+  height: 510px;
+  width: 680px;
   border: 1px solid #aaffdb;
   border-radius: 5px;
   background-color: black;
-  opacity: 0.8;
+  z-index: -1;
 }
 
-.sidebar{
-  width: 16%;
+/*.sidebar{
+  width: 15%;
   margin: 8% 4% 0 4%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
   border: 1px solid white;
   border-radius: 5px;
-}
+}*/
 
 .instructions{
-width: 40%;
+width: 500px;
 /* display: inline-block;
 margin: 0 auto; */
 text-align: center;
+border: 1px solid white;
+border-radius: 5px;
+padding: 0 0 20px 0;
+margin: 0 auto;
+position: absolute;
+right: 470px;
+top: 170px;
+}
+
+.winner{
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  padding: 0 0 20px 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 570px;
+  top: 250px;
+}
+
+
+.download {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.screencap {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.player-image{
+  width: 16%;
+  height: 16%;
+  vertical-align: middle;
 }
 
 .card {
   /* have to make sure the width of the square x square size matches the width of the container, otherwise the index will be off */
   width: 50px;
   height: 50px;
-  border: 1px solid hidden;
+  border: 1px solid transparent;
   border-radius: 5px;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  margin: 0.2%;
+  margin: 0.3%;
 }
 
 .card img {
-  padding: 27% 0;
   max-width: 100%;
   max-height: 100%;
-/*  mix-blend-mode: lighten; */
-  visibility: visible;
 }
 
-.is-visible {
-  visibility:visible;
+.hidden {
+  opacity: 0;
+/*  -webkit-transition:opacity 10s linear; */
+}
+
+.collapse{
+  display: none;
+}
+
+.illuminated{
+  border: 1px solid #93ffc5;
+}
+
+/*.current-player{
+    border: 1px solid cornflowerblue;
+}*/
+
+.player{
+  padding: 12px 0;
 }
 
 .card:hover{
@@ -98,6 +151,21 @@ text-align: center;
 
 h1{
 /*  text-align: center; */
-font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Cinzel Decorative', cursive;
   text-shadow: 0 0 0.2em white;
+}
+
+button{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+button:hover{
+/* color: black;
+background-color: grey;
+border: 1px solid black; */
+background-color: #1d5f75;
 }

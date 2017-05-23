@@ -66,6 +66,29 @@ backgroundChars = [
   }
 ];
 
+
+// win and lose images
+
+player1Starfish = {
+  image: "img/player1starfish.jpg"
+}
+
+player2Starfish = {
+  image: "img/player2starfish.jpg"
+}
+
+player1Octopus = {
+  image: "img/player1octopus.jpg"
+}
+
+player2Octopus = {
+  image: "img/player2octopus.jpg"
+}
+
+
+
+
+
 var boardCol=12;
 var boardRow=9;
 var backgroundCounter= 15;
@@ -213,6 +236,7 @@ var populateBackground = function(counter){
     var card = document.querySelector("[data-row='" +randomRow.toString() + "'][data-col='" +randomCol.toString() + "']");
     if(!card.children[0]){
       placeOnCard(backgroundChars[randomChar], randomCol, randomRow);
+
       switchVisibility(randomCol, randomRow);
       i++;
     }

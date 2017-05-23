@@ -1,5 +1,9 @@
+Bioluminescence
+=================
+
+
 Overview
-————
+----
 
 Bioluminescence is a game inspired by deep sea creatures.
 In terms of game play it's a cross between a memory card game and minesweeper.
@@ -15,7 +19,7 @@ Players might choose to explore methodically, or take leaps into unknown territo
 
 
 Approach
-————
+------
 
 The game was created in HTML CSS and vanilla Javascript.
 
@@ -30,7 +34,7 @@ All of these things will change during the development process, but it provides 
 
 
 What I learned
-—————————
+-----
 
 - DOM manipulation
 - CSS styling
@@ -42,7 +46,7 @@ What I learned
 
 
 To do list
-——————
+-----
 
 - a function for clearing out the game elements and re-setting values, so the game can be re-started after a win without reloading
 - a display for which player’s turn it is (I had one, but I wanted to change it)
@@ -57,7 +61,7 @@ To do list
 
 
 Future Features
-——————
+------
 
 - User input for board size, number of enemies, number of targets
 - animating the illuminate function: perhaps radiating out from the player, or fading or flickering, or some combination

@@ -24,11 +24,16 @@ body{
 
 .wrapper{
   margin: 0 auto;
+  position: relative;
 }
 
 .titles{
   text-align: center;
   padding: 0;
+}
+
+.titles h1{
+  display: inline-block;
 }
 
 .board {
@@ -39,6 +44,7 @@ body{
   border-radius: 5px;
   background-color: black;
   z-index: -1;
+  /*position: relative;*/
 }
 
 /*.sidebar{
@@ -53,6 +59,7 @@ body{
 
 .instructions{
 width: 500px;
+height: 300px;
 /* display: inline-block;
 margin: 0 auto; */
 text-align: center;
@@ -61,8 +68,15 @@ border-radius: 5px;
 padding: 0 0 20px 0;
 margin: 0 auto;
 position: absolute;
-right: 470px;
-top: 170px;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+
+margin-top: auto;
+margin-bottom: auto;
+top: 0;
+bottom: 0;
 }
 
 .winner{
@@ -71,10 +85,12 @@ top: 170px;
   width: 300px;
   text-align: center;
   padding: 0 0 20px 0;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   position: absolute;
-  right: 570px;
-  top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 
@@ -91,9 +107,19 @@ top: 170px;
 }
 
 .player-image{
-  width: 16%;
-  height: 16%;
+  width: 25%;
+  height: 25%;
   vertical-align: middle;
+  margin-left: 10px;
+}
+
+.player1, .player2 {
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0 20px;
 }
 
 .card {
@@ -138,7 +164,7 @@ top: 170px;
   border: 1px solid #93ffc5;
 }
 
-.player1.current {
+/*.player1.current {
   color: blue;
   border-color: blue;
 }
@@ -146,7 +172,7 @@ top: 170px;
 .player2.current {
   color: red;
   border-color: red;
-}
+}*/
 
 
 h1{
